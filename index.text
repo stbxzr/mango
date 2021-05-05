@@ -1,0 +1,19 @@
+1) serve up static file first / setup public static
+
+2) set up html routes
+
+3) hints: starting with a server.js from one of the activities will help with making 
+sure you have all the boilerplate you need for configuration purposes.
+find all of the fetch requests in the front end homework and set up endpoints.
+You will need html routes for /exercise and for /stats. You shouldn't need to modify your front end in any way.
+when you load up the front page, it is trying to grab the most recent workout.
+When you make a new workout, it is expecting you to create an empty workout in the database and return the 
+id of that new workout. When you are in the exercise endpoint, you are updating the workout that was created.
+the readme points you to documentation you will need in order to perform some form of aggregation of the
+ workout duration fields for your get requests for workouts.
+You can find and update a record with
+findByIdAndUpdate
+you can find and delete a record with
+findByIdAndDelete
+the mongoose library uses PROMISES instead of callbacks, 
+meaning we can use async await or use .then() when we use CRUD with mongoose
